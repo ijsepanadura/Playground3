@@ -5,36 +5,36 @@ public class MyPro {
     public static void main(String[] args) {
    
         System.out.print("Enter your name : ");
-        String name = scanner.nextLine();
+        String name = scanner.nextLine(); // get name
         assert (name.strip().length() == name.length()) && (name.length() >0) : "\033[31;1mYou have Entered an invalid Name\033[39;0m";
 
         System.out.print("Enter your age : ");
-        int age = scanner.nextInt();
+        int age = scanner.nextInt(); // get age
         scanner.skip("\n");
         assert (18>age & age>10)&&(String.valueOf(age) != null) : "\033[31;1mYou have Entered an invalid Age\033[39;0m";
         
-        String sub1;
+        String sub1; // declare subject name
         String sub2;
         String sub3;
-        double mark1;
+        double mark1; // declare subject marks
         double mark2;
         double mark3;
         
         System.out.print("Enter your subject-1 code : ");
-        sub1 = scanner.nextLine();
+        sub1 = scanner.nextLine(); // get subject1 name
         assert sub1.startsWith("SE-")&&
                 (sub1.strip().length() == sub1.length())&&
                 (sub1.length()>0):"\033[31;1mYou have Entered an invalid Subject\033[39;0m";
         
         
         System.out.printf("Enter your %s marks : ",sub1);
-        mark1 = scanner.nextDouble();
+        mark1 = scanner.nextDouble(); // get subject1 marks
         scanner.skip("\n");
         assert (100>=mark1 & mark1>=0)&&(String.valueOf(mark1) != null) 
                     : "\033[31;1mYou have Entered an invalid Mark\033[39;0m";
         
         System.out.print("Enter your subject-2 code : ");
-        sub2 = scanner.nextLine();
+        sub2 = scanner.nextLine();  // get subject2 name
         assert sub2.startsWith("SE-")&&
                 (sub2.strip().length() == sub2.length())&&
                 (sub2.length()>0)&&
@@ -42,13 +42,13 @@ public class MyPro {
                 :"\033[31;1mYou have Entered an invalid Subject\033[39;0m";
 
         System.out.printf("Enter your %s marks : ",sub2);
-        mark2 = scanner.nextDouble();
+        mark2 = scanner.nextDouble();  // get subject2 marks
         scanner.skip("\n");
         assert (100>=mark2 & mark2>=0)&&(String.valueOf(mark2) != null) 
                     : "\033[31;1mYou have Entered an invalid Mark\033[39;0m";
 
         System.out.print("Enter your subject-3 code :");
-        sub3 = scanner.nextLine();
+        sub3 = scanner.nextLine(); // get subject3 name
         assert sub3.startsWith("SE-")&&
                 (sub3.strip().length() == sub3.length())&&
                 (sub3.length()>0)&&
@@ -56,7 +56,7 @@ public class MyPro {
                 :"\033[31;1mYou have Entered an invalid Subject\033[39;0m";
 
         System.out.printf("Enter your %s marks : ",sub3);
-        mark3 = scanner.nextDouble();
+        mark3 = scanner.nextDouble();  // get subject3 marks
         assert (100>=mark3 & mark3>=0)&&(String.valueOf(mark3) != null) 
                     : "\033[31;1mYou have Entered an invalid Mark\033[39;0m";
         
@@ -67,12 +67,12 @@ public class MyPro {
 
         String def = "\033[39;0m"; // default color
 
-        String status;
+        String status;  // declare status
         String status1;
         String status2;
         String status3;
 
-        String subj1 = sub1.substring(3);
+        String subj1 = sub1.substring(3);  // getting tail of subject name
         String subj2 = sub2.substring(3);
         String subj3 = sub3.substring(3);
 
