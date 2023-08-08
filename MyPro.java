@@ -82,12 +82,12 @@ public class MyPro {
         status  = avg>=75 ? "\033[32;1mDP" :(avg>=65 ? "\033[33;1mCP" :(avg>=55 ? "\033[34;1mP" : "\033[31;1mF"));
 
         System.out.printf("%s\n","_".repeat(50));
-        System.out.printf("| %-10s:\033[34;1m %-35s%s|\n","Name",name.toUpperCase(),def);
-        System.out.printf("| %-10s:\033[31;1m %-3s%s%-32s|\n","Age",age,def,"years old");
-        System.out.printf("| %-10s: %-42s%s|\n","Status",status,def); 
-        System.out.printf("| %-10s:\033[34;1m %-15.2f%s%-8s: %-6.2f%-4s|\n","Total",total,def,"Avg",avg,"%");             
+        System.out.printf("| %-10s:\033[34;1m %-35s%s|\n","Name",name.toUpperCase(),def); //print name
+        System.out.printf("| %-10s:\033[31;1m %-3s%s%-32s|\n","Age",age,def,"years old"); // print age
+        System.out.printf("| %-10s: %-42s%s|\n","Status",status,def);                     // print status
+        System.out.printf("| %-10s:\033[34;1m %-15.2f%s%-8s: %-6.2f%-4s|\n","Total",total,def,"Avg",avg,"%"); // print total marks & avg          
         System.out.printf("%s\n","-".repeat(50));
-        System.out.printf("|  %-16s|  %-16s|  %-8s|\n","Subject","Marks","Status");
+        System.out.printf("|  %-16s|  %-16s|  %-8s|\n","Subject","Marks","Status"); // print spec line
         System.out.printf("%s\n","-".repeat(50));
         System.out.printf("|  %4s%03d%9s|  %-15.2f | %-14s%s|\n",sub1.substring(0,3),Integer.valueOf(subj1)," ".repeat(9),mark1,status1,def);
         System.out.printf("|  %4s%03d%9s|  %-15.2f | %-14s%s|\n",sub2.substring(0,3),Integer.valueOf(subj2)," ".repeat(9),mark2,status2,def);
