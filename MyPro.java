@@ -92,7 +92,7 @@ public class MyPro {
         System.out.printf("|  %4s%03d%9s|  %-15.2f | %-14s%s|\n",sub1.substring(0,3),Integer.valueOf(subj1)," ".repeat(9),mark1,status1,def);
         System.out.printf("|  %4s%03d%9s|  %-15.2f | %-14s%s|\n",sub2.substring(0,3),Integer.valueOf(subj2)," ".repeat(9),mark2,status2,def);
         System.out.printf("|  %4s%03d%9s|  %-15.2f | %-14s%s|\n",sub3.substring(0,3),Integer.valueOf(subj3)," ".repeat(9),mark3,status3,def);
-        System.out.printf("%s\n","_".repeat(50));
+        System.out.printf("%s\n","-".repeat(50));
 
         
     }
