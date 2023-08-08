@@ -52,7 +52,7 @@ public class MyPro {
         assert sub3.startsWith("SE-")&&
                 (sub3.strip().length() == sub3.length())&&
                 (sub3.length()>0)&&
-                (!sub3.equals(sub2) || !sub3.equals(sub1) )
+                (!sub3.equals(sub2) & !sub3.equals(sub1) )
                 :"\033[31;1mYou have Entered an invalid Subject\033[39;0m";
 
         System.out.printf("Enter your %s marks : ",sub3);
